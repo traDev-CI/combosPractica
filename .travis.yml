@@ -7,7 +7,13 @@ env:
   - QA
   - PROD
 
-  script:
-    - mkdir ShortStory
-    - touch kkk
-    - echo 5
+script:
+  - mkdir ShortStory
+  - touch kkk
+  - echo 5
+
+matrix:
+  include:
+   - python: 3.4
+    env:
+     - QA
