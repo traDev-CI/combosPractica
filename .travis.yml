@@ -2,18 +2,4 @@ language: python
 python:
   - 3.4
   - 2.7
-
-env:
-  - QA
-  - PROD
-
-script:
-  - mkdir ShortStory
-  - touch kkk
-  - echo 5
-
-matrix:
-  include:
-   - python: 3.4
-    env:
-     - QA
+script: python3 fruta.py
