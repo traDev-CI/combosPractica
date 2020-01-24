@@ -8,5 +8,5 @@ script: python3 fruta.py
 matrix:
   include:
     - name: "Version Tests"
-      python: 2.6
+      python: 2.2
       env: TEST_SUITE=suite_3_5_unit
