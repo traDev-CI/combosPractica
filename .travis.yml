@@ -7,4 +7,3 @@ script: python3 fruta.py
 matrix:
   include:
     - python: 3.4
-    env: QA
