@@ -11,4 +11,4 @@ jobs:
   - name: "pypy Unit Tests"
     python: "pypy"
     env: TEST_SUITE=suite_pypy_unit
-script: ./test.py $TEST_SUITE
+script: fruta.py $TEST_SUITE
