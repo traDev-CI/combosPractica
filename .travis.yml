@@ -6,4 +6,5 @@ script: python3 fruta.py
 
 matrix:
   include:
-    - python: 3.4
+    - python: 2.6
+    env: TEST_SUITE=suite_3_5_unit
