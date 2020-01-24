@@ -17,5 +17,5 @@ matrix:
       - sudo apt install -y php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt
       - sudo php -v
       - sudo curl -sSfL -o ~/.phpenv/versions/hhvm/bin/phpunit https://phar.phpunit.de/phpunit-5.7.phar
-      script: php7.0 Hello_World.php
+      script: php7.0 link.php
       env: TEST_SUITE=suite_7_0_unit
