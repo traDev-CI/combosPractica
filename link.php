@@ -1,4 +1,5 @@
 <?php
-$mensaje= "Pueba con PHP";
+$mensaje= "Pueba con echo";
 echo $mensaje;
+print "Prueba con print";
 ?>
