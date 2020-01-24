@@ -1,5 +1,14 @@
 language: python
-python:
-  - 3.4
-  - 2.7
-script: python3 fruta.py
+language: python
+jobs:
+  include:
+  - name: "3.4 Unit Test"
+    python: "3.4"
+    env: TEST_SUITE=suite_3_5_unit
+  - name: "3.4 Integration Tests"
+    python: "3.4"
+    env: TEST_SUITE=suite_3_4_integration
+  - name: "pypy Unit Tests"
+    python: "pypy"
+    env: TEST_SUITE=suite_pypy_unit
+script: ./test.py $TEST_SUITE
